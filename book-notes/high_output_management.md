@@ -1,0 +1,35 @@
+- As a manager, your output is the sum of the output of your team and the teams you influence.
+- What dashboard would I want to see each morning to determine current and future output?
+- Pair quantitative with qualitative measurements to avoid over-optimizing either one
+- Grove's Law -- all successful large orgs become hybrids
+  - mix of "mission" (product lines) and "functional" (e.g. sales, engineering, marketing)
+  - dual-reporting (basically guilds)
+- Coordination methods:
+  - Free market (value is clear to both sides)
+  - Contract (unclear value, defines type of work and standards)
+  - Culture
+    - values
+    - objectives
+    - methods
+  - Coordination method should be chosen based on individual motivation (self-interest, group interest) vs CUA: complexity, uncertainty, ambiguity (low, high)
+    - self + low = free market
+    - group + low = contract
+    - group + high = culture
+    - self + high = nothing works!
+- Competency vs motivation
+  - How do we get to self-actualization?
+  - Sports analogies -- how to introduce competition (internal or external) as motivation?
+- Task-relevant maturity (TRM)
+  - low = structured, task-oriented, explain what/when/how
+  - medium = individual-oriented, two-way, support, mutual reasoning
+  - high = limited manager involvement, just objectives + monitoring
+- Manager/Subordinate vs servant leadership -- has something changed? Only for reviews?
+- Written review ahead of time
+- see example performance evaluation document at the end of Chapter 13
+- interview goals
+   - technical knowledge
+   - actions
+   - gap between knowledge and actions
+   - operational values
+- 2 tools to improve performance: motivation and training
+- Go through some of the exercises
