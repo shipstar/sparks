@@ -1,0 +1,45 @@
+abyssalScepter:
+  name: "Abyssal Scepter"
+  abilityPower: 70
+  magicResist: 57
+  enemies:
+    magicResist: -20
+
+aegisOfTheLegion:
+  name: "Aegis of the Legion"
+  health: 270
+  armor: 18
+  magicResist: 24
+  allies:
+    armor: 12
+    magicResist: 15
+    attackDamage: 8
+
+amplifyingTome:
+  name: Amplifying Tome
+  abilityPower: 20
+
+archangelsStaff:
+  name: Archangel's Staff
+  mana: 400
+  manaRegenPer5: 25
+  abilityPower: 45
+  passive:
+    - Grants Ability Power equal to 3% of your maximum Mana.
+    - >-
+      UNIQUE: Each time you use an ability, your maximum Mana
+      increases by 4 (3 second cooldown). Bonus caps at +1000 Mana.
+      Does not stack with Tear of the Goddess or Manamune.
+
+atmasImpaler:
+  name: Atma's Impaler
+  armor: 45
+  criticalStrike: 18
+  passive:
+    - Gain Attack Damage equal to 2% of your maximum Health.
+
+augmentDeath:
+  name: "Augment: Death"
+  abilityPowerPerLevel: 3
+  abilityPower: 45
+  passive: "Death Ray sets fire to enemies, dealing 30% additional magic damage over 4 seconds."
