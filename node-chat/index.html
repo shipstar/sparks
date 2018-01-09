@@ -1,0 +1,79 @@
+<!--
+  To serve via localhost instead of a file:/// URL:
+  python -m SimpleHTTP 9000
+  (defaults to port 8000)
+-->
+<html>
+  <head>
+    <script src="https://cdn.socket.io/socket.io-1.2.1.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script>
+      var socket = io("http://localhost:8000");
+
+      socket.on('load', function (users, messages) {
+        var userList = users.map(function (user) {
+          return "<li>" + user + "</li>";
+        });
+
+        $("ul.users").html(userList);
+
+
+        var messageList = messages.map(function (message) {
+          return "<li>" + message + "</li>";
+        });
+
+        $("ul.messages").html(messageList);
+      });
+
+      socket.on('signed-in', function (name) {
+        $("ul.users").append("<li>" + name + "</li>");
+
+        $("form.sign-in").hide();
+        $("div.chat").show();
+      });
+
+      socket.on('said', function (message) {
+        $("ul.messages").append("<li>" + message + "</li>");
+      });
+    </script>
+    <script>
+      $(function (){
+        $("form.sign-in").submit(function (e) {
+          e.preventDefault();
+
+          socket.emit('sign-in', $(this).find("input").val());
+
+          $(this).find("input").val('');
+        });
+
+        $("form.new-message").submit(function (e) {
+          e.preventDefault();
+
+          socket.emit('say', $(this).find("input").val());
+
+          $(this).find("input").val('');
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Chat</h1>
+
+    <h3>Present:</h3>
+    <ul class="users"></ul>
+
+    <form class="sign-in">
+      <label>Username</label>
+      <input />
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="chat" style="display: none;">
+      <h3>Messages</h3>
+      <ul class="messages"></ul>
+      <form class="new-message">
+        <input />
+      </form>
+    </div>
+  </body>
+</html>
