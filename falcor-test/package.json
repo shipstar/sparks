@@ -1,0 +1,16 @@
+{
+  "name": "falcor-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --harmony --use-strict index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "falcor-express": "^0.1.2",
+    "falcor-router": "^0.2.9"
+  }
+}
