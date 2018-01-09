@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+$:.unshift("/Library/RubyMotion/lib")
+require 'motion/project/template/ios'
+require 'bundler'
+Bundler.require
+
+Motion::Project::App.setup do |app|
+  # Use `rake config' to see complete project settings.
+  app.name = 'whiteout'
+  app.provisioning_profile = '/Users/kshipley/Library/MobileDevice/Provisioning Profiles/7A4CECEF-CE95-4E08-85CF-2ABA56269099.mobileprovision'
+end
