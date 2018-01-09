@@ -1,0 +1,17 @@
+article.book
+  .info
+    img.cover(ng-src="{{ book.thumbnailUrl }}")
+    h1 {{ book.title }}
+    h4 by {{ book.author }}
+    p {{ book.getSummary() }}
+  .clearfix
+
+  ul.notes
+    button.btn.btn-primary(ng-click="blankNote()") + Note
+    li(ng-repeat="note in book.notes")
+      form.new-note(ng-if="!note.time")
+        textarea(ng-model="note.text", ng-blur="saveNote(note)")
+      div(ng-if="note.time")
+        p
+          strong {{ note.time | date:'short' }}
+        p {{ note.text }}

@@ -1,0 +1,18 @@
+h2 Enter new book information:
+
+img(ng-src="{{ book.thumbnailUrl }}", ng-show="book.hasThumbnail()")
+
+form(ng-submit="create()")
+  .form-group
+    label Title:
+    input.form-control(ng-model="book.title", ng-change="lookupInfo(book.title)")
+
+  .form-group
+    label Author:
+    input.form-control(ng-model="book.author")
+
+  .form-group
+    label Summary
+    textarea.form-control(ng-model="book.summary")
+
+  input.btn.btn-default(type="submit", value="Submit")

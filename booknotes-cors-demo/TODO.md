@@ -1,0 +1,5 @@
+- handle blank notes
+- delete a note
+- update a book
+- persist things
+- add a chapter?

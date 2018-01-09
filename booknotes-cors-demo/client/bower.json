@@ -1,0 +1,24 @@
+{
+  "name": "booknotes",
+  "version": "0.0.0",
+  "authors": [
+    "Kyle Shipley <kyleashipley@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "lib",
+    "test"
+  ],
+  "dependencies": {
+    "angular": "~1.2.11",
+    "angular-route": "~1.2.11",
+    "bootstrap-stylus": "~3.0.0",
+    "lodash": "~2.4.1"
+  },
+  "devDependencies": {
+  }
+}

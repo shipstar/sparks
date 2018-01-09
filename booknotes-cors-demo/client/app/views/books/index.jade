@@ -1,0 +1,10 @@
+h1 Welcome to Booknotes!
+
+ul
+  li(ng-repeat="book in books | orderBy:'title'")
+    a(href="/#/books/{{book.id}}") {{ book.title }}
+
+p
+  a(href="/#/books/new") Add a book
+
+script(src="//localhost:35729/livereload.js")

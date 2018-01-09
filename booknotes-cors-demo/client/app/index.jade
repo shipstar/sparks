@@ -1,0 +1,13 @@
+html
+  head
+    script(src="components.js")
+    script(src="app.js")
+    script(src="//localhost:35729/livereload.js")
+    link(rel="stylesheet", href="app.css")
+  body(ng-app="booknotesApp")
+    header.navbar.navbar-inverse.navbar-fixed-top
+      .container
+        .navbar-header
+          a.navbar-brand(href="/") Booknotes
+    main
+      .container(ng-view="")

@@ -1,0 +1,11 @@
+<html><head><script src="http://code.jquery.com/jquery-1.10.1.min.js"></script><script src="components.js"></script><script src="app.js"></script><link rel="stylesheet" href="app.css"/><script>$.get('http://localhost:3001/sign_in', function(data, textStatus, jqXHR){
+  var token = jqXHR.getResponseHeader("Http_authorization");
+  $.ajax({
+    url: 'http://localhost:3001/protected',
+    beforeSend: function(xhr) {
+      xhr.setRequestHeader("AUTHORIZATION", token);
+    }
+  });
+});</script></head><body ng-app="booknotesApp"><div ng-view="" class="container"></div></body></html>
+
+<ul><li ng-repeat="book in books">{{book}}</li></ul><script src="//localhost:35729/livereload.js"></script>
