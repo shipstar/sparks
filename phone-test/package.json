@@ -1,0 +1,19 @@
+{
+  "name": "phone-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "watchify --extension '.jsx' -t babelify index.jsx -o bundle.js -v -d"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.13.3",
+    "react-maskedinput": "^2.0.0"
+  },
+  "devDependencies": {
+    "babelify": "^6.1.2",
+    "watchify": "^3.2.1"
+  }
+}
