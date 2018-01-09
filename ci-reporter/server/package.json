@@ -1,0 +1,17 @@
+{
+  "name": "ci-reporter",
+  "version": "1.0.0",
+  "description": "Simple Particle Photon script to connect to SemaphoreCI and report build status via LEDs.",
+  "main": "index.js",
+  "author": "Kyle Shipley (shipstar@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "node-semaphoreci": "^1.0.3",
+    "particle-api-js": "^6.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0"
+  }
+}
