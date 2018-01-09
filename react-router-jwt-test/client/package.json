@@ -1,0 +1,24 @@
+{
+  "name": "react-router-jwt-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify --extension '.jsx' -t 6to5ify src/app.js -o build/bundle.js -v -d",
+    "watch": "watchify --extension '.jsx' -t 6to5ify src/app.js -o build/bundle.js -v -d"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.10.8",
+    "react": "^0.12.2",
+    "react-document-title": "^0.1.3",
+    "react-router": "^0.11.6"
+  },
+  "devDependencies": {
+    "6to5ify": "^3.1.2",
+    "browserify": "^8.1.1",
+    "watchify": "^2.2.1"
+  }
+}

@@ -1,0 +1,2 @@
+client: sh -c 'cd client && node server.js'
+web: sh -c 'cd server && ruby app.rb'
