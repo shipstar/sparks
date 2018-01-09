@@ -1,0 +1,12 @@
+{
+  "name":         "pong",
+  "version":      "0.0.1",
+  "dependencies": {
+    "grunt" : "0.4.x",
+    "grunt-contrib-coffee": "0.3.x",
+    "grunt-contrib-uglify": "0.1.x",
+    "grunt-contrib-watch": "0.1.x",
+    "grunt-contrib-concat": "0.1.x",
+    "coffee-script": ">= 1.4.x"
+  }
+}

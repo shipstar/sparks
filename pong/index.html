@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script type="text/javascript" src="compiled/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+  </head>
+  <body>
+    <h1>Pong</h1>
+    <div id="canvas-container">
+      <canvas id="game">Canvas not supported</canvas>
+    </div>
+
+    <script>
+      window.requestAnimFrame = (function(){
+        return  window.requestAnimationFrame       || 
+                window.webkitRequestAnimationFrame || 
+                window.mozRequestAnimationFrame    || 
+                window.oRequestAnimationFrame      || 
+                window.msRequestAnimationFrame     || 
+                function( callback ){
+                  window.setTimeout(callback, 1000 / 60);
+                };
+      })();
+
+      window.onload = function() {
+        var game = new Game;
+        game.run();
+      }
+    </script>
+  </body>
+</html>

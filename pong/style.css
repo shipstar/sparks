@@ -1,0 +1,17 @@
+h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+#canvas-container {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+canvas#game {
+  width: 600px;
+  height: 400px;
+  background-color: black;
+}
