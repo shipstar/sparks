@@ -1,0 +1,7 @@
+.repl_history
+.DS_Store
+build
+.rvmrc
+.sass-cache
+.dat*
+vendor/Pod*

@@ -1,0 +1,20 @@
+table-view {
+  background-color: white; }
+  table-view table-view-cell {
+    background-color: #f0f0f3; }
+
+#day-picker {
+  background-color: #f3f3f3;
+  color: #67737e;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.26); }
+  #day-picker label {
+    font-family: "Lato";
+    font-weight: light;
+    font-size: 20px;
+    background-color: transparent; }
+
+* {
+  font-family: "Lato";
+  font-weight: light; }

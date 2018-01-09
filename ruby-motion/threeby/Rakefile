@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+$:.unshift("/Library/RubyMotion/lib")
+require 'motion/project/template/ios'
+require 'bundler'
+Bundler.require
+require 'sugarcube-nsdate'
+require 'sugarcube-factories'
+require 'sugarcube-animations'
+require 'sugarcube-color'
+
+Motion::Project::App.setup do |app|
+  app.name = 'threeby'
+
+  app.fonts = ['Lato-Light.ttf', 'Lato-LightItalic.ttf', 'Lato-Regular.ttf']
+
+  app.prerendered_icon = true
+
+  app.development do
+    ENV['MOTION_ROOT'] = `pwd`.chomp
+  end
+
+  app.pods do
+    pod 'MCSwipeTableViewCell'
+  end
+end
+
+desc "Auto-compile default.sass into default.css"
+task :sassy do
+  system "sass --watch sass/default.sass:resources/default.css"
+end
