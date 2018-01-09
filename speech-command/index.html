@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/particle-api-js/5/particle.min.js"></script>
+    <script src='app.js'></script>
+  </head>
+  <body>
+    <button onclick="recognizeSpeech()">Recognize</button>
+    <label>Blink speed</label>
+    <input type="range" value="200" min="15", max="1000" onChange="changeBlinkSpeed(this.value)" />
+    <input type="text" id="blink-speed" disabled="true" value="200" />
+  </body>
+</html>
