@@ -1,0 +1,22 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    mini_portile2 (2.2.0)
+    nokogiri (1.8.0)
+      mini_portile2 (~> 2.2.0)
+    roo (2.7.1)
+      nokogiri (~> 1)
+      rubyzip (~> 1.1, < 2.0.0)
+    rubyzip (1.2.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  roo
+
+RUBY VERSION
+   ruby 2.3.1p112
+
+BUNDLED WITH
+   1.15.1
