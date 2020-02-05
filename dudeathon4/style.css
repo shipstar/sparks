@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Monofonto';
+  src: url('monofonto.ttf');
+}
+
+body {
+  background-color: black;
+  color: #51db6a;
+}
+
+.scanlines {
+  position: absolute;
+  width: 100%;
+  height: 1099px;
+  background-image: url('green_scanlines.png');
+  opacity: 0.18;
+  z-index: -1000;
+}
+
+#main {
+  width: 670px;
+  margin: 30px auto;
+}
+
+#main h1 {
+  font: 68px/70px "Monofonto";
+  text-align: center;
+}
+
+#main h2 {
+  font: 36px/36px "Monofonto";
+  text-align: center;
+}
+
+#main h3 {
+  font: 24px/32px "Monofonto";
+}
+
+#main p {
+  font: 18px/26px "Monofonto";
+}
+
+#logo {
+  margin-left: 2em;
+  text-align: center;
+  float: left;
+}
+
+#logo img {
+  width: 190px;
+}
+
+#title {
+  float: left;
+  color: white;
+  margin-left: 3em;
+  margin-top: 2em;
+}
+
+#main .details {
+  margin: 2em 0;
+}
+
+#main .detail {
+  height: 150px;
+  padding: 10px;
+  /*border-top: 1px solid #51db6a;
+  border-right: 1px solid #51db6a;
+  border-radius: 2px;*/
+  border-top: 1px solid #51db6a;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#51db6a), to(transparent));
+  background-image: -webkit-linear-gradient(#51db6a, transparent);
+  background-image:
+      -moz-linear-gradient(#51db6a, transparent),
+      -moz-linear-gradient(#51db6a, transparent);
+  background-image:
+      -o-linear-gradient(#51db6a, transparent),
+      -o-linear-gradient(#51db6a, transparent);
+  background-image: 
+      linear-gradient(#51db6a, transparent),
+      linear-gradient(#51db6a, transparent);
+  -moz-background-size: 1px 100%;
+  background-size: 1px 100%;
+  background-position: 100% 0, 100% 100%;
+  background-repeat: no-repeat; 
+}
+
+#main .detail h3 {
+  border-bottom: 1px solid #888;
+}
+
+#main .details:last-of-type {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#main .details #who {
+  width: 100%;
+  height: auto;
+}
+
+#who .name {
+  float: left;
+  width: 50%;
+  color: white;
+}
+
+#who .name.confirmed {
+  color: #51db6a;
+}
+
+#who .name.cancelled {
+  color: #ff9b37;
+}
+
+#who .asterisk {
+  margin-top: 15px;
+}
