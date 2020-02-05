@@ -1,0 +1,14 @@
+body{
+	background-color: black;
+}
+h1{
+	color:grey;
+	font-family: '04B_03';
+	font-size: 5em;
+	text-shadow:-2px -2px 0 darkgrey, -4px -4px 0 lightgrey, -6px -6px 0 white;
+}
+
+@font-face {
+  font-family: '04B_03';
+  src: url('fonts/04B_03.ttf') format('truetype');
+}

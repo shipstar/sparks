@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+      $(function(){
+        var quips = [
+          "I walked on your face!",
+          "You think you're so big?!",
+          "I own you!",
+          "I see you!",
+          "I see what you're doing!",
+          "Don't you know it's day?",
+          "You have no business here!",
+          "Return to the night!"
+        ];
+
+        var quipIndex = Math.floor(Math.random() * quips.length);
+        var $speech = $('.speech');
+
+        $speech.text(nextQuip);
+
+        setInterval(nextQuip, 5000);
+
+        function nextQuip(){
+          var nextQuip = quips[++quipIndex % quips.length];
+
+          $speech.fadeOut(1000, function(){
+            $speech.text(nextQuip);
+            $speech.fadeIn(1000);
+          });
+        }
+      });
+    </script>
+  </head>
+  <body style="background-color: black;">
+    <img src="moon.jpg" style="position: absolute; text-align: center; height: 480px; width: 640px; z-index: -1">
+    <img src="astronaut.gif" style="position: absolute; top: 600px; left: 250px;"/>
+    <img src="man.gif" style="position: absolute; top: 600px; left: 380px;"/>
+    <div class="speech" style="position: absolute; top: 420px; left: 280px; background-image: url(speech_bubble.png); width: 424px; height: 152px; font-family: 'Press Start 2P', cursive; color: white; font-size: 36px; line-height: 44px; padding: 20px 20px; display: none;">
+      I walked on your face!
+    </div>
+  </body>
+</html>
