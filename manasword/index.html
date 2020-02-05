@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <style>
+      @font-face {
+        font-family: 'manaspaceregular';
+        src: url('manaspace-webfont.eot');
+        src: url('manaspace-webfont.eot?#iefix') format('embedded-opentype'),
+             url('manaspace-webfont.woff') format('woff'),
+             url('manaspace-webfont.ttf') format('truetype'),
+             url('manaspace-webfont.svg#manaspaceregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        background-color: black;
+      }
+
+      #container {
+        margin: 100px auto;
+        width: 512px;
+        height: 446px;
+        background-image: url(som_sword.png);
+      }
+
+      .speech {
+        width: 80%;
+        margin: 0 auto;
+        padding: 5px;
+        border: 16px;
+        border-image: url(mana_border.png) 40 40 stretch;
+        background: url(checkered_bg.png);
+        background-clip: padding-box;
+        font-family: 'manaspaceregular';
+        font-size: 32px;
+        line-height: 40px;
+        color: white;
+        -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+        text-shadow:
+          2px 2px 0 #000,
+          /* Simulated effect for Firefox and Opera
+             and nice enhancement for WebKit */
+          -1px -1px 0 #000,  
+           1px -1px 0 #000,
+          -1px  1px 0 #000,
+           1px  1px 0 #000;
+      }
+    </style>
+
+    <script>
+      $(function() {
+        var thoughts = [
+          "Mana is growing weak...",
+          "Only you can save the world...",
+          "You must play Secret of Mana...",
+          "Before it is too late...",
+          "MAGNUS, RIBBY, and SRAMST have fallen...",
+          "It is up to you...",
+          "TYLER..."
+        ]
+
+        var thoughtIndex = 0;
+
+        var $speech = $('.speech');
+
+        setInterval(nextThought, 5000);
+
+        function nextThought(){
+          var nextThought = thoughts[thoughtIndex++ % thoughts.length];
+
+          $speech.fadeOut(1000, function(){
+            $speech.text(nextThought);
+            $speech.fadeIn(1000);
+          });
+        }
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="speech">
+        TYLER...
+      </div>
+      <audio src="i_wont_forget.mp3" autoplay>
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </body>
+</html>
