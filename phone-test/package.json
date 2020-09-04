@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react": "^0.13.3",
+    "react": "^16.13.1",
     "react-maskedinput": "^2.0.0"
   },
   "devDependencies": {
