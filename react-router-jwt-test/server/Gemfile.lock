@@ -4,7 +4,7 @@ GEM
     backports (3.6.4)
     jwt (1.2.0)
     multi_json (1.10.1)
-    rack (1.6.0)
+    rack (1.6.13)
     rack-protection (1.5.3)
       rack
     rack-test (0.6.3)
